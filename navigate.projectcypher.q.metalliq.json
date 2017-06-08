@@ -1,6 +1,6 @@
 {
  "name"         : "Navigate [COLOR FF0084FF]-[/COLOR] Project Cypher ([COLOR FF0084FF]Q[/COLOR])",
- "repository"   : "repository.merlin",
+ "repository"   : "repository.Cypherslocker",
  "plugin"       : "plugin.video.ProjectCypher",
  "priority"     : 800,
  "id"           : "navigate.projectcypher.q",
@@ -11,9 +11,34 @@
    {
     "link"      : "plugin://plugin.video.ProjectCypher/",
     "steps"     : [
-     ".*movies on demand.*",
+     ".*serial.*",
+     "><{title}"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.ProjectCypher/",
+    "steps"     : [
+     ".*test.*",
      "@any",
-     ".*{title}.*"
+     "><({title}|{title|replace(',&#39;)})"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.ProjectCypher/",
+    "steps"     : [
+     ".*serial.*",
+     "><.*{title}.*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.ProjectCypher/",
+    "steps"     : [
+     ".*test.*",
+     "@any",
+     "><.*({title}|{title|replace(',&#39;)}).*"
      ],
     "action"    : "PLAY"
    }
@@ -47,35 +72,24 @@
     "link"      : "plugin://plugin.video.ProjectCypher/",
     "steps"     : [
      ".*iptv.*",
-     ".*iptv.*",
-     "({name}|{name|ws()})"
+     "><@anycontaining:Click",
+     ".*({basename}|{basename|ws()|replace(sports,sport)}).*({extension}|{extension|number_to_text()}|{extension|text_to_number()}).*"
      ],
     "action"    : "PLAY"
    },
    {
     "link"      : "plugin://plugin.video.ProjectCypher/",
     "steps"     : [
-     ".*iptv.*",
-     ".*iptv.*",
-     ".*({name}|{name|ws()}).*"
+     ".*miami.*",
+     ".*({basename}|{basename|ws()|replace(sports,sport)}).*({extension}|{extension|number_to_text()}|{extension|text_to_number()}).*"
      ],
     "action"    : "PLAY"
    },
    {
     "link"      : "plugin://plugin.video.ProjectCypher/",
     "steps"     : [
-     ".*iptv.*",
-     ".*iptv.*",
-     "({basename}|{basename|ws()|replace(ts,t)}).({extension}|{extension|number_to_text()}|{extension|text_to_number()})"
-     ],
-    "action"    : "PLAY"
-   },
-   {
-    "link"      : "plugin://plugin.video.ProjectCypher/",
-    "steps"     : [
-     ".*iptv.*",
-     ".*iptv.*",
-     ".*({basename}|{basename|ws()|replace(ts,t)}).({extension}|{extension|number_to_text()}|{extension|text_to_number()}).*"
+     ".*live.*",
+     ".*({basename}|{basename|ws()|replace(sports,sport)}).*({extension}|{extension|number_to_text()}|{extension|text_to_number()}).*"
      ],
     "action"    : "PLAY"
    }

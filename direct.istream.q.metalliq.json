@@ -9,7 +9,7 @@
  "movies"       : [
   [
    {
-    "link"      : "plugin://script.icechannel/?name={title}&img={poster}&title={title}&item_title={title}&video_type=movie&indexer=movies&imdb_id={imdb}&mode=file_hosts&item_mode=file_hosts&type=movies&library=true",
+    "link"      : "plugin://script.icechannel/?name={title_+}&title={title_+}+%28{year}%29&item_title={title_+}+%28{year}%29&video_type=movie&indexer=movies&imdb_id={imdb}&mode=file_hosts&year={year}&item_mode=file_hosts&type=movies&library=true",
     "steps"     : [],
     "action"    : "PLAY"
    }
@@ -18,7 +18,7 @@
  "tvshows"      : [
   [
    {
-    "link"      : "plugin://script.icechannel/?episode={episode}&name={clearname}&title={title}&season={season}&section=&indexer=tv_shows&library=true&imdb_id={imdb}&video_type=episode&year=&type=tv_episodes&mode=file_hosts",
+    "link"      : "plugin://script.icechannel/?episode={episode}&name={clearname_+}&title={title_+}&season={season}&indexer=tv_shows&library=true&imdb_id={imdb}&video_type=episode&year={year}&type=tv_episodes&mode=file_hosts",
     "steps"     : [],
     "action"    : "PLAY"
    }
