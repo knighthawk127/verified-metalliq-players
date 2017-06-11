@@ -1,6 +1,6 @@
 {
  "name"         : "Navigate [COLOR FF0084FF]-[/COLOR] UK Turk Playlists ([COLOR FF0084FF]Q[/COLOR])",
- "repository"   : "repository.metalkettle",
+ "repository"   : "repository.ukturk",
  "plugin"       : "plugin.video.ukturk",
  "priority"     : 800,
  "id"           : "navigate.ukturk.q",
