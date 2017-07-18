@@ -1,9 +1,9 @@
 {
- "name"         : "Direct [COLOR FF0084FF]-[/COLOR] ISTREAM ([COLOR FF0084FF]Q[/COLOR])",
- "repository"   : "repository.istream",
+ "name"         : "Direct [COLOR FF0084FF]-[/COLOR] Duckpool ([COLOR FF0084FF]Q[/COLOR])",
+ "repository"   : "repository.duckpool",
  "plugin"       : "script.icechannel",
  "priority"     : 200,
- "id"           : "direct.istream.q",
+ "id"           : "direct.duckpool.q",
  "filters"      : {},
  "postprocess"  : "",
  "movies"       : [
