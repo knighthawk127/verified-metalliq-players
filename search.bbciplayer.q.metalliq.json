@@ -30,5 +30,36 @@
  ],
  "musicvideos"  : [],
  "music"        : [],
- "live"         : []
+ "live"         : [
+    [
+      {
+        "link":"plugin://plugin.video.bbciplayer/?IPID&description&iconimage=special://home/addons/plugin.video.bbciplayer/icon.png&mode=2&name={name}&url=url",
+        "steps":[
+          "{name}"
+        ],
+        "action":"PLAY"
+      },
+      {
+        "link":"plugin://plugin.video.bbciplayer/?IPID&description&iconimage=special://home/addons/plugin.video.bbciplayer/icon.png&mode=2&name={name}&url=url",
+        "steps":[
+          ".*{name}.*"
+        ],
+        "action":"PLAY"
+      },
+      {
+        "link":"plugin://plugin.video.bbciplayer/?IPID&description&iconimage=special://home/addons/plugin.video.bbciplayer/icon.png&mode=2&name={name}&url=url",
+        "steps":[
+          ".*{basename}.({extension}|{extension|number_to_text()}|{extension|text_to_number()})"
+        ],
+        "action":"PLAY"
+      },
+      {
+        "link":"plugin://plugin.video.bbciplayer/?IPID&description&iconimage=special://home/addons/plugin.video.bbciplayer/icon.png&mode=2&name={name}&url=url",
+        "steps":[
+          ".*{basename}.({extension}|{extension|number_to_text()}|{extension|text_to_number()}).*"
+        ],
+        "action":"PLAY"
+      }
+    ]
+  ]
 }
