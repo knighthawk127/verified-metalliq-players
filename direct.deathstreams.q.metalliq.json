@@ -1,7 +1,7 @@
 {
  "name"         : "Direct [COLOR FF0084FF]-[/COLOR] Death Streams ([COLOR FF0084FF]Q[/COLOR])",
  "repository"   : "repository.deathstreams",
- "plugin"       : "plugin.video.metalliq",
+ "plugin"       : "plugin.video.blamo",
  "priority"     : 200,
  "id"           : "direct.deathstreams.q",
  "filters"      : {},
